@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+/* font-family: 'Antonio', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.page{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+
+
+/* ----- HEADER ------ */
+.front{
+    /* border: 1px solid blue; */
+    background-color: rgb(221, 223, 231);
+    text-align: center;
+}
+.logo1{
+    width: 50px;
+}
+
+
+
+/* ---------- NAV ------ */
+
+nav{
+    position: sticky;
+    top: 0px;
+    box-sizing: border-box;
+}
+
+.ulm{
+    background-color: rgb(221, 223, 231);
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    color: black;
+    overflow: hidden;
+    font-weight: bolder;
+}
+.item:hover{
+    color:rgb(255,215,0); 
+    transition: 0.8s;
+}
+
+
+
+
+
+/* -------- ABOUT ------- */
+
+
+.Acontainer{
+    /* border: 1px solid yellow; */
+    background-image: url(../content/background/bc1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 200px;
+}
+.Acontent{
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    background-color:rgba(206, 174, 133, 0.527);
+    transition: 0.8s;
+}
+.Acontent:hover{
+    background-color: rgba(10, 3, 69, 0.527);
+    transition: 0.8s;
+    border-radius: 40px;
+}
+
+#ah3{
+    /* border: 1px solid green; */
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+#ap1{
+    /* border: 1px solid palevioletred; */
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Antonio', sans-serif;
+}
+
+
+
+
+
+/* ------------- CONTACT --------- */
+
+.CONTACT{
+    background-color: rgb(221, 223, 231);
+}
+.Ccontainer{
+    /* border: 1px solid red; */
+    padding: 50px;
+}
+.Ch{
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    padding: 20px;
+    padding-bottom: 50px;
+    font-family: 'Antonio', sans-serif;
+    /* border: 1px solid blue; */
+}
+.CONTACT a{
+    text-decoration: none;
+    color: black;
+}
+.Cul{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid yellow; */
+
+}
+.Cli{
+    border-radius: 20px;
+    background-color: aliceblue;
+    list-style: none;
+    padding: 10px;
+    /* border: 1px solid red; */
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+}
+.Cimg{
+    width: 40px;
+}
+
+.Cli:hover{
+    transition: 0.6s;
+    background-color: rgb(231, 231, 123);
+    color: white;
+}
+
+
+
+
+
+/* ---------------- MEDIA Q --------------*/
+
+@media (max-width: 900px){
+    .Acontainer{
+        margin: auto;
+    }
+    .Acontent{
+        margin: auto;
+        margin-top: 50px;
+        width: 90%;
+        padding: 10px;
+    }
+    #ah3{
+        font-size: 30px;
+    }
+    
+    /* ----- CONTACT ----- */
+    .Ch{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .Cul{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .Cli{
+        padding: 5px;
+    }
+}

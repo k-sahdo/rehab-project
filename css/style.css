@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+/* font-family: 'Antonio', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+/* font-family: 'Amaranth', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* border: 1px solid red; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ALL{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* ------ HEADER ---- */
+
+/* ----FRONT--- */
+
+.front{
+    /* border: 2px solid yellow; */
+    background-color: rgb(3, 9, 36);
+    color: white;
+    text-align: center;
+}
+
+
+/* ------ PAGE ----- */
+.page{
+    /* border: 2px solid blue; */
+    background-image: url(../content/files/WALLPAPER.jpg);
+    /* background-size: cover; */
+    background-position-x: 100%;
+    background-position-y: 30%;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* opacity: 0.9; */
+}
+
+
+.pcontainer{
+    /* border: 2px solid red; */
+    background-color: rgba(206, 174, 133, 0.527);
+    /* background-color: rgba(255, 255, 255, 0.477); */
+    /* padding: 10px; */
+    width: 250px;
+    float: right;
+    height: 100%;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 100px;
+    transition: 0.8s;
+    box-sizing: border-box;
+}
+#logo2{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 150px;
+    /* border: 1px solid red; */
+}
+.pcontent{
+    /* border: 2px solid green; */
+    padding: 10px;
+}
+#ph2{
+    color: white;
+    font-size: 15px;
+    font-family: 'Amaranth', sans-serif;
+}
+.pul{
+    /* border: 2px solid blue; */
+    /* background-color: brown; */
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    /* font-family: 'Antonio', sans-serif; */
+}
+.pa{
+    text-decoration: none;
+}
+.pli{
+    text-align: center;
+    /* color: white; */
+    color: rgb(238, 238, 238);
+    font-size: 30px;
+    list-style: none;
+    padding: 20px;
+    /* border: 2px solid orange; */
+}
+.pli:hover{
+    color: rgb(154, 138, 20);
+    transition: 0.8s;
+}
+.pcontainer:hover{
+    background-color: rgba(10, 3, 69, 0.527);
+    border-radius: 300px;
+    transition: 0.8s;
+}
+
+/* --- media ---- */
+.pul2{
+    margin: auto;
+    width: 120px;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.ppli{
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin: auto;
+}
+.limg{
+    /* border: 1px solid yellow; */
+    width: 30px;
+}
+.ppli:hover{
+    background-color: white;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+
+/* ----- FOOTER ----- */
+.foot{
+    /* border: 1px solid yellow; */
+    background-color: rgb( 21, 30, 69);
+    margin: auto;
+    text-align: center;
+}
+#logo1{
+    width: 40px;
+}
+
+
+
+
+
+/* --------------- MEDIAQ -------------*/
+@media (max-width: 900px){
+.page{
+    background-image: url(../content/files/WALPPAPER-CELULAR.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 90%;
+    height: 900px;
+    padding: 0;
+}
+.pcontainer{
+    height: 0;
+    width: 100%;
+    margin: auto;
+}
+#logo2{
+    width: 40px;
+}
+.pcontent{
+    padding: 0;
+}
+.pul{
+    margin-top: 90%;
+    width: 100%;
+}
+.pli{
+    background-color: rgba(7, 15, 51, 0.63);
+}
+.pli:hover{
+    background-color: rgb(154, 138, 20);
+    color: black;
+}
+.ppli{
+    background-color: white;
+    border-radius: 100px;
+}
+.ppli:hover{
+    background-color: rgb(154, 138, 20);
+}
+
+/* -------- FOOT ------- */
+.foot{
+    height: 100%;
+}
+}

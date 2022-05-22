@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+/* font-family: 'Antonio', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.page{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+
+/* ---------- HEADER -------- */
+
+.front{
+    /* border: 1px solid blue; */
+    /* background-color: rgb(221, 223, 231); */
+    background-color: rgb(3, 9, 36);
+    text-align: center;
+}
+.logo1{
+    width: 40px;
+}
+
+
+/* ---------- NAV ------ */
+
+nav{
+    position: sticky;
+    top: 0px;
+    box-sizing: border-box;
+}
+
+.ulm{
+    /* background-color: rgb(221, 223, 231); */
+    background-color: rgb(3, 9, 36);
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    overflow: hidden;
+    font-weight: bolder;
+}
+.item:hover{
+    color:rgb(255,215,0); 
+    transition: 0.8s;
+}
+
+
+
+/* -------------- SERVIÇOS ------------ */
+#SERVICES{
+    /* border: 3px solid red; */
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* padding-top: 50px; */
+    /* background-image: linear-gradient(to right, #FFD700, #F0E68C, #FFFFF0); */
+}
+
+.flag{
+    /* border: 2px solid blue; */
+    width: 100%;
+    /* padding: 40px; */
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.img1{
+    /* width: 600px; */
+    width: 50%;
+    height: 500px;
+    display: inline-block;
+}
+.ftext{
+    /* border: 3px solid yellow; */
+    display: inline-block;
+    /* width: 400px; */
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.tcontent{
+    /* border: 3px solid green; */
+    padding: 20px;
+    height: 100%;
+    color: white;
+    background-color: rgb(21, 30, 69);
+}
+.sH{
+    /* border: 3px solid red; */
+    padding: 5px;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+    /* color: white; */
+    font-family: 'Antonio', sans-serif; 
+    font-size: 40px;
+}
+.sP{
+    /* border: 3px solid blue; */
+    padding: 10px;
+    /* color: white; */
+    text-align: center;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+}
+
+.tcontent:hover{
+    background-color: rgba(211, 216, 72, 0.893);
+    transition: 0.4s;
+    color: rgb(15, 22, 52);
+}
+
+/* ------------- CONTACT --------- */
+
+.CONTACT{
+    /* background-color: rgb(221, 223, 231); */
+    background-color: rgb(3, 9, 36);
+}
+.Ccontainer{
+    /* border: 1px solid red; */
+    padding: 50px;
+}
+.Ch{
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    padding: 20px;
+    padding-bottom: 50px;
+    font-family: 'Antonio', sans-serif;
+}
+.CONTACT a{
+    text-decoration: none;
+    color: black;
+}
+.Cul{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.Cli{
+    border-radius: 20px;
+    background-color: aliceblue;
+    list-style: none;
+    padding: 10px;
+    /* border: 1px solid red; */
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+}
+.Cimg{
+    width: 40px;
+}
+
+.Cli:hover{
+    transition: 0.6s;
+    background-color: rgb(231, 231, 123);
+    color: white;
+}
+
+
+
+
+
+
+/* ---------------- MEDIAQ -------------*/
+
+@media (max-width: 900px) {
+    /* ----------SERVICES------- */
+   #SERVICES{
+    background-color: rgb(245,245,245);
+}
+.flag{
+    border-top: 2px solid rgb(255,215,0);
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(15, 22, 52);
+}
+
+.img1{
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+.ftext{
+    width: 100%;
+    display: block;
+}
+.tcontent{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+}
+.sH{
+    font-size: 40px;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 100px;
+}
+.sp{
+    font-size: 10px;
+    margin-bottom: 100px;
+}
+
+   /* ----- CONTACT ----- */
+   .Ch{
+    font-size: 30px;
+    padding: 10px;
+}
+.Cul{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+.Cli{
+    padding: 5px;
+}
+
+}
